@@ -8,13 +8,17 @@
  */
 package exp.interprete;
 import java.io.*;
-import static exp.interprete.NaopTokenizer.Token;
 /**
  * The special Tokenizer for the NAOP Language
  * @see java.io.StreamTokenizer
  */
 public class NaopTokenizer extends StreamTokenizer implements Serializable {
-    /** the set of keywords
+    /**
+	 * As a Serilisable the id of the StreamTokenizer
+	 */
+	private static final long serialVersionUID = -6804357541970450515L;
+	/** 
+	 * The set of reserved keyword for the mathexp language
      */
     public static enum Token {
         /**
@@ -42,7 +46,7 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
          */
         DIV,
         /**
-         * a valid java symbol
+         * a valid java like symbol
          */
         SYMBOL, //une variable (symbole)
         /**
@@ -52,7 +56,7 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
         /**
          * end instruction ;
          */
-        FININST, //sÃ©parateur ;
+        FININST, //séparateur ;
         /** Quiter
          */
         QUIT,
@@ -70,10 +74,12 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
         SHOW,
         
         /**
-         * nop
+         * Max operator
          */
         MAX,
-
+        /**
+         * nop No opération
+         */
         NOP
                 
     }
@@ -99,8 +105,9 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
     }
     
     /**
-     * The nextToken for NAOP language
+     * The nextToken for MathExp language
      * @return the token type. Token is enum
+     * @see StreamTokenizer
      */
     public Token nToken() {
         tok=Token.NOP;
@@ -131,7 +138,7 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
         return (tok);
     }
     /**
-     * The last Token
+     * The last Token, the current token
      * @return the token type
      */
     public Token getTok() {return tok;}
@@ -142,20 +149,21 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
     @Override
     public String toString() {
         switch (tok) {
-            case PO:    return ("PO"); //parenthï¿½se ouvrante
-            case PF:    return ("PF"); //parenthï¿½se fermante
+            case PO:    return ("PO"); //parenthèse ouvrante
+            case PF:    return ("PF"); //parenthèse fermante
             case PLUS:  return("PLUS");
             case MOINS: return ("MOINS");
             case MULT:  return ("MULT");
             case DIV:   return ("DIV");
             case SYMBOL:   return ("VAR:"+sval); //une variable (simbole)
             case CONST: return("CONST:"+nval);
-            case FININST:return("SEP"); //sï¿½parateur
+            case FININST:return("SEP"); //séparateur
             case QUIT:  return("QUIT");
             case NOP:   return("NOP?");
             case AFFECT:return("AFFECT");
             case EVAL:  return("EVAL");
-            default: return("Big problÃ¨me!");
+            case MAX:  return("MAX");
+            default: return("Big problème!");
         }
     }
     

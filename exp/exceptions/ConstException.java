@@ -30,7 +30,11 @@ package exp.exceptions;
  */
 public class ConstException extends ExpException{
     
-    /** 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1172236414260564716L;
+	/** 
      * Creates new VarException 
      */
     public ConstException() {

@@ -20,7 +20,11 @@ import exp.interprete.NaopTokenizer.Token;
  */
 
 public class Operateur implements Serializable {
-  public static final int PLUS =0;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2193796257751828430L;
+public static final int PLUS =0;
   public static final int MOINS=1;
   public static final int MULT=2;
   public static final int DIV=3;

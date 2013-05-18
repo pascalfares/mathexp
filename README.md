@@ -1,15 +1,15 @@
 mathexp
 =======
 
-DÃ©monstration d'un interpretteur: application au calcul formel
+Démonstration d'un interpretteur: application au calcul formel
 
-Traducteur Objets recusifs inspirÃ© de la  Descente rÃ©cursive
+Traducteur Objets recusifs inspiré de la  Descente récursive
 
-Descente rÃ©cursive
+Descente récursive
 ==================
 
-L'analyse descendante peut Ãªtre considÃ©rÃ©e comme une tentative pour dÃ©terminer une dÃ©rivation gauche associÃ©e Ã  une chaÃ®ne d'entrÃ©e. Elle peut Ãªtre vue aussi comme une tentative pour construire un arbre d'analyse de la chaÃ®ne d'entrÃ©e, en partant de la racine et en crÃ©ant les noeuds de l'arbre en prÃ©ordre. A la section , nous avons prÃ©sentÃ© un cas particulier d'analyse par descente rÃ©cursive, appelÃ©e analyse prÃ©dictive, dans laquelle aucun rebroussement n'Ã©tait nÃ©cessaire.
+L'analyse descendante peut être considérée comme une tentative pour déterminer une dérivation gauche associée Ã  une chaÃ®ne d'entrée. Elle peut Ãªtre vue aussi comme une tentative pour construire un arbre d'analyse de la chaine d'entrée, en partant de la racine et en créant les noeuds de l'arbre en préordre. A la section , nous avons présenté un cas particulier d'analyse par descente récursive, appelée analyse prédictive, dans laquelle aucun rebroussement n'était nécessaire.
 
-Une forme gÃ©nÃ©rale d'analyse descendante, appelÃ©e descente rÃ©cursive, peut impliquer des retours arriÃ¨re, c'est-Ã -dire nÃ©cessiter des passages rÃ©pÃ©tÃ©s sur le texte source. Cependant, les analyseurs avec rebroussement ne sont pas trÃ¨s frÃ©quents. Une des raisons est que le rebroussement est rarement nÃ©cessaire pour analyser les constructions des langages de programmation.
+Une forme générale d'analyse descendante, appelée descente récursive, peut impliquer des retours arrière, c'est-Ã -dire nécessiter des passages répétés sur le texte source. Cependant, les analyseurs avec rebroussement ne sont pas très fréquents. Une des raisons est que le rebroussement est rarement nécessaire pour analyser les constructions des langages de programmation.
 
 pour en savoir plus [Notions de compilation](http://www.infeig.unige.ch/support/cpil/lect/recurs/web.html)

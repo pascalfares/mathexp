@@ -17,7 +17,11 @@ import exp.interprete.NaopTokenizer.Token;
  * Le non terminal var: un symbole
  */
 public class Var extends exp.model.Exp {
-    //static List<Var> traverse=new java.util.LinkedList<Var>();;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7425419212327156134L;
+	//static List<Var> traverse=new java.util.LinkedList<Var>();;
     /**
      * Le nom du symbole
      */

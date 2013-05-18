@@ -19,6 +19,10 @@ import exp.interprete.NaopTokenizer.Token;
  */
 public abstract class Exp implements java.io.Serializable {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7470376100013887074L;
+	/**
      * The envirenment of expressions
      */
     protected exp.langage.Environnement env;

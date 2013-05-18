@@ -15,7 +15,11 @@ import exp.interprete.NaopTokenizer.Token;
  */
 public class Const extends Exp {
     
-    /** Valeur de la constante */    
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8209718920751882390L;
+	/** Valeur de la constante */    
     private Double valeur;
     /** Constructeur de constante */  
     

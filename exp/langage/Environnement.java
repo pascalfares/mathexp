@@ -22,9 +22,14 @@ import exp.model.Exp;
  * this class is the kernel of the idea of dynamic binding
  */
 public class Environnement implements java.io.Serializable {
-    
-
-    protected java.util.Hashtable<String,Exp> table;
+   
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1562141500365985155L;
+	
+	protected java.util.Hashtable<String,Exp> table;
     /** Creates new TableSymboles */
     public Environnement() {
         table = new java.util.Hashtable<String,Exp>();

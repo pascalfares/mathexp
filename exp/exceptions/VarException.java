@@ -13,7 +13,11 @@ package exp.exceptions;
  */
 public class VarException extends ExpException{
     
-    /** Creates new VarException */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8150830682724175353L;
+	/** Creates new VarException */
     public VarException() {
     }
     public VarException(String n) {

@@ -30,7 +30,11 @@ package exp.exceptions;
  */
 public class OperateurException extends ExpException{
     
-    /** 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7782595419513829067L;
+	/** 
      * Creates new VarException 
      */
     public OperateurException() {

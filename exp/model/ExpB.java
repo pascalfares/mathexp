@@ -16,7 +16,11 @@ import exp.exceptions.ExpBException;
 import exp.exceptions.ExpException;
 
 public class ExpB extends Exp {
-    int op;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -453548540545345573L;
+	int op;
     Exp expg;
     Exp expd;
     
@@ -112,30 +116,27 @@ public class ExpB extends Exp {
      */    
     public static Exp parse(exp.interprete.NaopTokenizer mt, Environnement ts)
     throws ExpException {
-        Token res;
         //System.out.println(mt);
         if (mt.getTok()==Token.PO) { //c'est bien une expression binaire
-            ExpB eb = new ExpB(ts); //Crï¿½ation d'une expression
-            res = mt.nToken(); // skip (
+            ExpB eb = new ExpB(ts); //préparation (Création) d'une expression
             //Expression gauche qui est soit COnst soit Var soir EXPB
             eb.expg=Exp.parse(mt,ts);
             //il faut maintenant un opï¿½rateur
             //res=mt.nextToken();
             eb.parseOperateur(mt);
-            //si on continue => il n'y a pas eu d'exptions
+            //si on continue => il n'y a pas eu d'exeptions
             
             //et une expression droite
             eb.expd=Exp.parse(mt, ts);
             
             //et le tous se termine par une )
-            //res = mt.nextToken();
             if (mt.getTok() == Token.PF) {
                 mt.nToken(); //skip ) et fin
                 //System.out.println("L'expression reconue "+ eb);
                 return eb;
             }
             else {
-                throw new ExpBException("Pas de parenthï¿½se fermante");
+                throw new ExpBException("Pas de parenthèse fermante");
             }
         }
         else {

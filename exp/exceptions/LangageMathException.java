@@ -14,6 +14,12 @@ package exp.exceptions;
 public class LangageMathException extends java.lang.Exception {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3635921363648340535L;
+
+
+	/**
      * Creates new <code>ExpException</code> without detail message.
      */
     public LangageMathException() {

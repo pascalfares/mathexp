@@ -14,6 +14,12 @@ package exp.exceptions;
 public class ExpException extends java.lang.Exception {
 
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3475669527393602505L;
+
+
+	/**
      * Creates new <code>ExpException</code> without detail message.
      */
     public ExpException() {

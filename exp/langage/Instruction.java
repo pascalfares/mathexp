@@ -30,26 +30,15 @@ public class Instruction {
         
     }
     
-    
     /**
-     * Parse des évaluation ou show
-     * @param mt Tokenizer
-     * @param ts envronnement
-     * @param b Eval ou show
-     * @throws exp.exceptions.LangageMathException Exception langage
-     * @throws exp.exceptions.ExpException exception expression
+     * Parse and eval in the current environment
+     * @param mt
+     * @param ts
+     * @param b
+     * @return
+     * @throws LangageMathException
+     * @throws exp.exceptions.ExpException
      */
-    private static void parseEval(exp.interprete.NaopTokenizer mt, Environnement ts, boolean... b)
-    throws LangageMathException,exp.exceptions.ExpException {
-        
-        exp.model.Exp e;
-        
-        e=exp.model.Exp.parse(mt,ts);
-        if (e==null) throw new LangageMathException("pas d'expression reconnue");
-        if (b.length ==0) System.out.println(e.eval());
-        else System.out.println(e);
-        
-    }
     private static Exp nparseEval(exp.interprete.NaopTokenizer mt, Environnement ts, boolean... b)
     throws LangageMathException,exp.exceptions.ExpException {
 

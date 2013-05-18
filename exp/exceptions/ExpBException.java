@@ -13,7 +13,11 @@ package exp.exceptions;
  */
 public class ExpBException extends ExpException {
 
-    /** Creates new ExpBException */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1739050500143556533L;
+	/** Creates new ExpBException */
     public ExpBException() {
     }
     /**concructeur

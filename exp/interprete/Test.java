@@ -5,27 +5,23 @@
  */
 
 package exp.interprete;
-import exp.exceptions.LangageMathException;
-import exp.langage.Environnement;
-import exp.langage.Instruction;
-import exp.model.Exp;
 import java.io.*;
-/** Programme de test utilisant Le parser du langage mathÃ©matique.
+/** Programme de test utilisant Le parser du langage mathématique.
  * Ce processus Lit le clavier et envoie la chaine au Tokenizer
  * (Utilisation d'un tube entre 2 threads)
- * @author Pascal FarÃ¨s ISAE
+ * @author Pascal Farès ISAE
  * @version $@
  *
  * @see PipedInputStream PipedOutputStream
  */
 public class Test extends Thread {
-    /** Flux d'entrÃ© pour l'interprÃ©teur */    
+    /** Flux d'enté pour l'interpréteur */    
     BufferedReader in;
-    /** Envoi de l'entrÃ©e vers le flux du toenizer */    
+    /** Envoi de l'entrée vers le flux du toenizer */    
     PrintWriter out;
     /** Construteur Test
-     * @param in Stream d'entrÃ©e de l'interprÃ©teur
-     * @param out Stream de sortie vers le tokenizer, en gÃ©nÃ©ral un tube
+     * @param in Stream d'entrée de l'interpréteur
+     * @param out Stream de sortie vers le tokenizer, en général un tube
      */
  
     public Test(InputStream in, OutputStream out) {
@@ -34,10 +30,10 @@ public class Test extends Thread {
         
     }
     
-    /** CrÃ©ation du tube pipeout-->pipein
-     * CrÃ©ation du tokenizer sur pipein
-     * Lancement des 2 threads (InterprÃ©teur/Parseur du langage mathÃ©matique)
-     * Le dialogue entre les deux thread est rÃ©alisÃ© au moyen du tube
+    /** Création du tube pipeout-->pipein
+     * Création du tokenizer sur pipein
+     * Lancement des 2 threads (Interpréteur/Parseur du langage mathématique)
+     * Le dialogue entre les deux thread est réalisé au moyen du tube
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
@@ -55,9 +51,10 @@ public class Test extends Thread {
 
 
          
-           exp.langage.Langage l = exp.langage.Langage.parse(pi);
+           
          /**/
-/*
+          /*
+           * exp.langage.Langage l = exp.langage.Langage.parse(pi);
           Environnement ts= new Environnement();
           NaopTokenizer tokenizer = new NaopTokenizer("p1 = (x +5)");
           tokenizer.nToken();
@@ -84,12 +81,12 @@ public class Test extends Thread {
          System.out.println(r);
       */
     }
-    /** La boucle de l'interprÃ©teur
+    /** La boucle de l'interpréteur
      *
      * <PRE>while (true) {
      *   Afficher le prompt
      *   Lire le clavier
-     *   Envoyer les entrÃ©e vers le Tokenizer
+     *   Envoyer les entrée vers le Tokenizer
      * }
      * </PRE>
      */    
