@@ -56,7 +56,7 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
         /**
          * end instruction ;
          */
-        FININST, //séparateur ;
+        FININST, //sÃ©parateur ;
         /** Quiter
          */
         QUIT,
@@ -78,7 +78,7 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
          */
         MAX,
         /**
-         * nop No opération
+         * nop No opÃ©ration
          */
         NOP
                 
@@ -149,21 +149,21 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
     @Override
     public String toString() {
         switch (tok) {
-            case PO:    return ("PO"); //parenthèse ouvrante
-            case PF:    return ("PF"); //parenthèse fermante
+            case PO:    return ("PO"); //parenthï¿½se ouvrante
+            case PF:    return ("PF"); //parenthï¿½se fermante
             case PLUS:  return("PLUS");
             case MOINS: return ("MOINS");
             case MULT:  return ("MULT");
             case DIV:   return ("DIV");
             case SYMBOL:   return ("VAR:"+sval); //une variable (simbole)
             case CONST: return("CONST:"+nval);
-            case FININST:return("SEP"); //séparateur
+            case FININST:return("SEP"); 
             case QUIT:  return("QUIT");
             case NOP:   return("NOP?");
             case AFFECT:return("AFFECT");
             case EVAL:  return("EVAL");
             case MAX:  return("MAX");
-            default: return("Big problème!");
+            default: return("Big problï¿½me!");
         }
     }
     

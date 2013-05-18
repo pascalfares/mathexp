@@ -118,7 +118,8 @@ public class ExpB extends Exp {
     throws ExpException {
         //System.out.println(mt);
         if (mt.getTok()==Token.PO) { //c'est bien une expression binaire
-            ExpB eb = new ExpB(ts); //préparation (Création) d'une expression
+            mt.nToken(); //Skip (
+            ExpB eb = new ExpB(ts); //prÃ©paration (CrÃ©ation) d'une expression
             //Expression gauche qui est soit COnst soit Var soir EXPB
             eb.expg=Exp.parse(mt,ts);
             //il faut maintenant un opï¿½rateur
@@ -136,7 +137,7 @@ public class ExpB extends Exp {
                 return eb;
             }
             else {
-                throw new ExpBException("Pas de parenthèse fermante");
+                throw new ExpBException("Pas de parenthï¿½se fermante");
             }
         }
         else {
