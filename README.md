@@ -1,15 +1,19 @@
 mathexp
 =======
 
-Démonstration d'un interpretteur: application au calcul formel
+Dï¿½monstration d'un interpretteur: application au calcul formel
 
-Traducteur Objets recusifs inspiré de la  Descente récursive
+Traducteur Objets recusifs inspirï¿½ de la  Descente rï¿½cursive
 
-Descente récursive
+Descente rÃ©cursive
 ==================
 
-L'analyse descendante peut être considérée comme une tentative pour déterminer une dérivation gauche associée Ã  une chaÃ®ne d'entrée. Elle peut Ãªtre vue aussi comme une tentative pour construire un arbre d'analyse de la chaine d'entrée, en partant de la racine et en créant les noeuds de l'arbre en préordre. A la section , nous avons présenté un cas particulier d'analyse par descente récursive, appelée analyse prédictive, dans laquelle aucun rebroussement n'était nécessaire.
+L'analyse descendante peut Ã¨tre considÃ©rÃ©e comme une tentative pour dÃ©terminer une dÃ©rivation gauche associÃ©e Ã  une chaÃ®ne d'entrï¿½e. Elle peut Ãªtre vue aussi comme une tentative pour construire un arbre d'analyse de la chaine d'entrï¿½e, en partant de la racine et en crï¿½ant les noeuds de l'arbre en prï¿½ordre. A la section , nous avons prï¿½sentï¿½ un cas particulier d'analyse par descente rï¿½cursive, appelï¿½e analyse prï¿½dictive, dans laquelle aucun rebroussement n'ï¿½tait nï¿½cessaire.
 
-Une forme générale d'analyse descendante, appelée descente récursive, peut impliquer des retours arrière, c'est-Ã -dire nécessiter des passages répétés sur le texte source. Cependant, les analyseurs avec rebroussement ne sont pas très fréquents. Une des raisons est que le rebroussement est rarement nécessaire pour analyser les constructions des langages de programmation.
+Une forme gÃ©nÃ©rale d'analyse descendante, appelÃ©e descente rÃ©cursive, peut impliquer des retours arriÃ¨re, c'est-Ã -dire nÃ©cessiter des passages rÃ©pÃ©tÃ©s sur le texte source. Cependant, les analyseurs avec rebroussement ne sont pas trÃ¨s frÃ©quents. Une des raisons est que le rebroussement est rarement nÃ©cessaire pour analyser les constructions des langages de programmation. Le langage mathexp est adaptÃ© Ã  la descente rÃ©curive sans rebroussement.
 
-pour en savoir plus [Notions de compilation](http://www.infeig.unige.ch/support/cpil/lect/recurs/web.html)
+Dans ce projet nous dÃ©finirons une technique dite de "Objets rÃ©cursifs" inspirÃ©e de la descente rÃ©cursive.
+
+pour en savoir plus 
+[Objets rÃ©cursifs, la mÃ©thode](http://algorithmes.cofares.net/fondamental/objets-rcursif-la-mthode)
+[Notions de compilation](http://www.infeig.unige.ch/support/cpil/lect/recurs/web.html)
