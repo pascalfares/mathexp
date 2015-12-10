@@ -127,7 +127,10 @@ public class Var extends exp.model.Exp {
      */
     @Override
     public String toString() {
-            String res= "Var:"+nom+"="+env.cherche(nom);
+            Exp e = env.cherche(nom);
+            if (e == null) return "Var:"+nom;
+            
+            String res= "Var:"+nom+"="+e;
             return res;
         
     }
