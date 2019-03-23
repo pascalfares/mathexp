@@ -12,7 +12,7 @@ import java.io.*;
  * Lit le clavier et envoie la chaine au Tokenizer (Utilisation d'un tube entre
  * 2 threads)
  *
- * @author Pascal Far�s ISAE
+ * @author Pascal Farès ISAE
  * @version $@
  *
  * @see PipedInputStream PipedOutputStream
@@ -20,19 +20,19 @@ import java.io.*;
 public class Test extends Thread {
 
     /**
-     * Flux d'ent� pour l'interpr�teur
+     * Flux d'entré pour l'interpréteur
      */
     BufferedReader in;
     /**
-     * Envoi de l'entr�e vers le flux du toenizer
+     * Envoi de l'entrée vers le flux du toenizer
      */
     PrintWriter out;
 
     /**
      * Construteur Test
      *
-     * @param in Stream d'entr�e de l'interpr�teur
-     * @param out Stream de sortie vers le tokenizer, en g�n�ral un tube
+     * @param in Stream d'entrée de l'interpréteur
+     * @param out Stream de sortie vers le tokenizer, en général un tube
      */
     public Test(InputStream in, OutputStream out) {
         this.in = new java.io.BufferedReader(new InputStreamReader(in));
@@ -41,9 +41,9 @@ public class Test extends Thread {
     }
 
     /**
-     * Cr�ation du tube pipeout-->pipein Cr�ation du tokenizer sur pipein
-     * Lancement des 2 threads (Interpr�teur/Parseur du langage math�matique) Le
-     * dialogue entre les deux thread est r�alis� au moyen du tube
+     * Création du tube pipeout-->pipein Création du tokenizer sur pipein
+     * Lancement des 2 threads (Interpréteur/Parseur du langage mathématique) Le
+     * dialogue entre les deux thread est réalisé au moyen du tube
      *
      * @param args the command line arguments
      */
@@ -96,15 +96,16 @@ public class Test extends Thread {
     }
 
     /**
-     * La boucle de l'interpr�teur
+     * La boucle de l'interpréteur
      *
      * <PRE>while (true) {
      *   Afficher le prompt
      *   Lire le clavier
-     *   Envoyer les entr�e vers le Tokenizer
+     *   Envoyer les entrée vers le Tokenizer
      * }
      * </PRE>
      */
+    @Override
     public void run() {
         String s;
         System.out.print("$> ");

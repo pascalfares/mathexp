@@ -1,10 +1,10 @@
 
 /**
- * Titre : Expression Arithm�tiques<p>
- * Description : Mad�lisation arborescente d'exspressions arithm�tique<p>
- * Copyright : Copyright (c) Pascal Far�s<p>
- * Soci�t� : ISAE<p>
- * @author Pascal Far�s
+ * Titre : Expression Arithmétiques<p>
+ * Description : Madélisation arborescente d'exspressions arithmétique<p>
+ * Copyright : Copyright (c) Pascal Farés<p>
+ * Société : ISAE<p>
+ * @author Pascal Farés
  * @version 1.0
  */
 package exp.model;
@@ -14,7 +14,7 @@ import java.io.Serializable;
 import exp.interprete.NaopTokenizer;
 import exp.interprete.NaopTokenizer.Token;
 /**
- * L'op�rateur l'une des op�ration arithm�tique
+ * L'opérateur l'une des opération arithmétique
  * il y en a 4 pour l'instant
  * vous pouver y en ajouter d'autre!
  */
@@ -50,7 +50,7 @@ public static final int PLUS =0;
         return this;
     }
   /**
-   * afficher en clair l'op�ration
+   * afficher en clair l'opération
    */
   public int getOp() { return op;}
   public String toString() {

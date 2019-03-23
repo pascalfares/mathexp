@@ -1,14 +1,11 @@
 /**
  * Titre :
- * <p>
- * NAOP</p>
- * Description : The NAOP interpreter<p>
- * Copyright : Copyright (c) Pascal Farès<p>
- * <p>
- * ISAE</p>
+ * NAOP
+ * Description : The NAOP interpreter
+ * Copyright : Copyright (c) Pascal Farès
+ * ISAE
  *
  * @author Pascal Farès
- * @version $*
  */
 package exp.interprete;
 
@@ -189,9 +186,9 @@ public class NaopTokenizer extends StreamTokenizer implements Serializable {
     public String toString() {
         switch (tok) {
             case PO:
-                return ("PO"); //parenth�se ouvrante
+                return ("PO"); //parenthèse ouvrante
             case PF:
-                return ("PF"); //parenth�se fermante
+                return ("PF"); //parenthèse fermante
             case PLUS:
                 return ("PLUS");
             case MOINS:

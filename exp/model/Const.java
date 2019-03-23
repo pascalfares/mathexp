@@ -1,17 +1,17 @@
 
 /**
- * Titre : Expression Arithm�tiques<p>
- * Description : Mad�lisation arborescente d'exspressions arithm�tique<p>
- * Copyright : Copyright (c) Pascal Far�s<p>
- * Soci�t� : ISAE<p>
- * @author Pascal Far�s
+ * Titre : Expression Arithmétiques<p>
+ * Description : Madélisation arborescente d'exspressions arithmétique<p>
+ * Copyright : Copyright (c) Pascal Farés<p>
+ * Société : ISAE<p>
+ * @author Pascal Farès
  * @version 1.0
  */
 package exp.model;
 import exp.langage.Environnement;
 import exp.interprete.NaopTokenizer.Token;
 /**
- * Les constantes enti�res (seulement celle ci dans v1.0)
+ * Les constantes entières (seulement celle ci dans v1.0)
  */
 public class Const extends Exp {
     
